@@ -5,5 +5,5 @@ def sum(a,b)
 
 def product(a,b)
 {
-  echo 'The product of ${a} and ${b} is ${a*b}"
+  echo "The product of ${a} and ${b} is ${a*b}"
 }
