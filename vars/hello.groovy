@@ -15,3 +15,7 @@ def division(a,b)
 {
   echo "The divide of ${a} and ${b} is ${a/b}"
 }
+def division(a,b)
+{
+  echo "The divide of ${a} and ${b} is ${a/b}"
+}
