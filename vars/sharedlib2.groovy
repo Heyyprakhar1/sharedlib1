@@ -12,3 +12,6 @@ def deployement(jobname,ip){
 def testing(jobname){
   sh "python3 /var/lib/jenkins/workspace/${jobname}/Hello.py" 
 }
+def release(jobname, ip){
+ sh "scp /var/lib/jenkins/workspace/${jobname}/Hello.py ubuntu@${ip}:/home/ubuntu/new-folder" 
+}
