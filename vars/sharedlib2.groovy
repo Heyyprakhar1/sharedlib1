@@ -9,3 +9,6 @@ def build()
 def deployement(jobname,ip){
   sh "scp /var/lib/jenkins/workspace/${jobname}/Hello.py ubuntu@${ip}:/home/ubuntu/new-folder"
 }
+def testing(jobname){
+  sh "python3 /var/lib/jenkins/workspace/${jobname}/Hello.py" 
+}
