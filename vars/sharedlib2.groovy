@@ -4,5 +4,5 @@ def gitdownload(repo)
 }
 def build()
 {
-  sh 'Python3'
+  sh 'python3'
 }
