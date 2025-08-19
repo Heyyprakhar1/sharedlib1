@@ -7,5 +7,5 @@ def build()
   sh 'python3'
 }
 def deployement(jobname,ip){
-  sh 'scp /var/lib/jenkins/workspace/${jobname}/prakhar.py ubuntu@${ip}:/home/ubuntu/new-folder'
+  sh "scp /var/lib/jenkins/workspace/${jobname}/new.py ubuntu@${ip}:/home/ubuntu/new-folder"
 }
